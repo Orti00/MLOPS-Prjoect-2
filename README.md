@@ -2,7 +2,7 @@
 This repository contains all the files used for the second Project of MLOPS at HSLU 2024/25
 The project aims to train a model with the given Hyperparameters "learning rate" (default=0.0001), "warmup steps" (default=0), "weight decay" (default=0.0), "batch size" (default=64) and "checkpoint dir" (default="models").
 
-Steps to properly run the project:\n
+Steps to properly run the project:<br>
 -Build a image from the path where the docker file is in by using: docker build -t your_image_name .
 -Choose your hyperparameters you want to give the model
 -Run the image with your selected hyperparameters by using:
