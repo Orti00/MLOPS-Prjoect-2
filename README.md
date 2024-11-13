@@ -8,5 +8,5 @@ Steps to properly run the project:<br>
 -Run the image with your selected hyperparameters by using:<br>
 docker run -v your_save_path:/app/your_checkpoint_dir -it your_image_name --learning_rate your_learning_rate --warmup_steps your_warmup_steps --weight_decay your_weight_decay --batch_size your_batch_size --checkpoint_dir your_checkpoint_dir<br>
 or alternatively:<br>
-docker run -v your_save_path:/app/your_checkpoint_dir -it your_image_name -lr your_learning_rate -ws your_warmup_steps -wd your_weight_decay -bs your_batch_size --checkpoint_dir your_checkpoint_dir<br>
+docker run -v your_save_path:/app/your_checkpoint_dir -it your_image_name python app/main.py -lr your_learning_rate -ws your_warmup_steps -wd your_weight_decay -bs your_batch_size --checkpoint_dir your_checkpoint_dir<br>
 -After the complete run the models state_dict will be saved in your_checkpoint_dir
